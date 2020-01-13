@@ -3,10 +3,9 @@ from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
 from sklearn.metrics import accuracy_score
 from sklearn.datasets import load_digits 
-from sklearn.svm import SVC
+#from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 #import numpy as np
-#from sklearn import svm
 
 # upload data
 digits = load_digits()
@@ -21,13 +20,7 @@ train_ss_x = ss.fit_transform(train_x)
 test_ss_x = ss.transform(test_x)
 
 # creating LR classifier
-#lr = LogisticRegression()
-#clf = lr.fit(train_ss_x, train_y)
-#predict_y = clf.predict(test_ss_x)
-#print('SVM accuracy rate: %0.4lf' % accuracy_score(test_y,predict_y))
-
-# creating svm classifier
-svc =SVC(kernel='linear')
-svc.fit(train_ss_x, train_y)
-predict_y = svc.predict(test_ss_x)
+lr = LogisticRegression()
+clf = lr.fit(train_ss_x, train_y)
+predict_y = clf.predict(test_ss_x)
 print('SVM accuracy rate: %0.4lf' % accuracy_score(test_y,predict_y))
