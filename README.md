@@ -4,7 +4,7 @@
 
 # Here, we will try to explain the models mathematically using mnist data.
 
-# In order to avoid copy everything from books and articles, I will try to demostrate what really happens when the models are exploited.
+# In order to avoid copying everything from books and articles, I will try to demostrate what really happens when the models are exploited.
 
 #
 
